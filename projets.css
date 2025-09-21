@@ -1,0 +1,152 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    color: black;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+.menu a:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -12px;
+    color: #000;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Projets */
+.projects-container {
+    background-color: white;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px 20px;
+}
+
+.projects-container h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.project-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.project-text h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.project-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.project-image {
+    flex: 1;
+    min-width: 280px;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    padding: 30px 40px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info div {
+    margin-bottom: 20px;
+}
+
+.footer-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.socials a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-text, .project-image {
+        width: 100%;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
