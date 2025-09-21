@@ -1,0 +1,183 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu a:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -12px;
+    color: #000;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    margin-right: 40px;
+}
+
+.intro {
+    max-width: 500px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.yellow {
+    background-color: #f4b400;
+}
+
+.red {
+    background-color: #d93025;
+}
+
+.blue {
+    background-color: #34a853;
+}
+
+/* Footer */
+.footer {
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    padding: 30px 40px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info div {
+    margin-bottom: 20px;
+}
+
+.footer-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.socials a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        margin: 0 0 30px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
