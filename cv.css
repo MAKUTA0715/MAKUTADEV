@@ -1,0 +1,155 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    color: black;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+.menu a:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -12px;
+    color: #000;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Contenu principal */
+.cv-container {
+    max-width: 800px;
+    background-color: white;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cv-container h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cv-container h2 {
+    font-size: 1.4rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.job {
+    margin-bottom: 30px;
+}
+
+.job h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.job p {
+    margin-bottom: 10px;
+}
+
+.job ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.competences ul,
+.langues ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    padding: 30px 40px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info div {
+    margin-bottom: 20px;
+}
+
+.footer-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.socials a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .job h3 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
