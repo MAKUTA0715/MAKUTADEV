@@ -20,4 +20,4 @@ Technologies utilisées
 
 Lien du site hébergé
 
-https://resplendent-salmiakki-119ae7.netlify.app/
+[https://resplendent-salmiakki-119ae7.netlify.app/](https://beamish-seahorse-781b93.netlify.app/)
