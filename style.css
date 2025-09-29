@@ -61,7 +61,6 @@ body {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    filter: grayscale(100%);
     margin-right: 40px;
 }
 
@@ -108,15 +107,15 @@ body {
 }
 
 .yellow {
-    background-color: #f4b400;
+    background-color: #ffa500;
 }
 
 .red {
-    background-color: #d93025;
+    background-color: #ff0000;
 }
 
 .blue {
-    background-color: #34a853;
+    background-color: #87ceeb;
 }
 
 /* Footer */
@@ -160,6 +159,9 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
     .hero-section {
         flex-direction: column;
         text-align: center;
